@@ -1,0 +1,20 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "My resume generator.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "lint": "prettier --write .",
+    "open": "pnpm vite --port 3000 --open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "devDependencies": {
+    "prettier": "^3.8.2",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "vite": "^8.2.2"
+  }
+}
