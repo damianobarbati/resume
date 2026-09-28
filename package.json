@@ -13,6 +13,9 @@
     "ox": "pnpm lint; pnpm format",
     "open": "pnpm vite --port 3000 --open"
   },
+  "dependencies": {
+    "oxlint-tailwindcss": "^1.14.0"
+  },
   "devDependencies": {
     "oxfmt": "^0.70.0",
     "oxlint": "^1.85.0",

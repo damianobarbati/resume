@@ -4,19 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damiano Barbati — Tech Lead</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
+      window.tailwind.config = {
         theme: {
           extend: {
             colors: { resume: "#0788f6", ink: "#3f3f46" },
-            fontFamily: { sans: ["Inter", "Arial", "Helvetica", "sans-serif"] },
+            fontFamily: { sans: ["Arial", "Helvetica", "sans-serif"] },
           },
         },
       };
@@ -52,7 +46,6 @@
           width: 210mm;
           height: 297mm;
           margin: 0 !important;
-          overflow: hidden;
           background: #fff !important;
           -webkit-print-color-adjust: exact;
           print-color-adjust: exact;
@@ -63,7 +56,6 @@
           min-height: 297mm !important;
           height: 297mm !important;
           margin: 0 !important;
-          overflow: hidden;
           box-shadow: none !important;
         }
       }
@@ -107,13 +99,11 @@
             >
           </div>
         </header>
-        <section>
-          <h2 class="mb-2 border-b border-zinc-300 pb-1.5 leading-none font-medium">
-            EXPERIENCE (MOST RECENT)
-          </h2>
-          <article class="mb-4">
+        <section id="experience">
+          <h2 class="mb-4 border-b border-zinc-300 pb-1.5 leading-none font-medium">EXPERIENCE</h2>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
             <div class="flex items-baseline justify-between gap-3 leading-tight">
-              <h3 class="font-bold">Tech Lead</h3>
+              <h3 class="font-bold">Tech Lead, Full stack developer</h3>
               <time class="whitespace-nowrap">01/2023 - 02/2026 (3 years)</time>
             </div>
             <div class="flex items-baseline justify-between gap-3">
@@ -121,8 +111,8 @@
               <span class="text-right leading-tight">London, UK (Remote)</span>
             </div>
             <p class="mt-2">
-              Enterprise consultancy delivering custom Web3 and decentralized architecture solutions
-              across the US, Europe, and Asia.
+              Applied Blockchain is an enterprise consultancy delivering custom Web3 and
+              decentralized architecture solutions across the US, Europe, and Asia.
             </p>
             <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
               <li>
@@ -142,19 +132,47 @@
               <li>
                 Delivered 100% of contractual milestones for
                 <a
-                  class="font-bold text-sm font-semibold underline"
+                  class="underline"
                   href="https://finance.yahoo.com/news/dhl-group-cryopdp-applied-blockchain-121500062.html"
                   target="_blank"
                   rel="noreferrer"
                   >Atlas Path by DHL</a
                 >, Applied Blockchain's second-largest project
               </li>
-              <li>Stack: TypeScript, Node.js, React, PostgreSQL, Redis, Docker, Kubernetes</li>
+              <li>
+                Conducted Artillery load testing for high-volume workloads, meeting contractual
+                latency targets of p95 ≤ 200ms and p99 ≤ 500 ms
+              </li>
+              <li>
+                Developed private blockchain solutions, leveraging the Hyperledger Besu EVM network
+                and Intel TEE hardware for high-security enterprise environments
+              </li>
+              <li>
+                Handled smart contract lifecycle management in Solidity, providing zero-downtime
+                upgrades, proxy patterns, and critical state migrations utilizing OpenZeppelin
+                libraries, while mitigating strict EVM bytecode size limitations
+              </li>
+              <li>
+                Reduced Web3 onboarding friction by removing traditional wallet barriers (MetaMask)
+                for non-crypto enterprise users
+              </li>
+              <li>
+                Built developer tools for enterprise clients on OpenAPI standard, with online API
+                references and dedicated sandbox environments for integration and testing
+              </li>
+              <li>
+                Managed a Jira-based software development lifecycle with bi-weekly sprints, aligning
+                planning, execution, reviews, and releases across engineering and client teams
+              </li>
+              <li>
+                Stack: TypeScript, Node.js, React, PostgreSQL, Redis, Docker, Kubernetes, CI/CD
+                (Azure pipelines)
+              </li>
             </ul>
           </article>
-          <article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
             <div class="flex items-baseline justify-between gap-3 leading-tight">
-              <h3 class="font-semibold">Head of Development</h3>
+              <h3 class="font-bold">Tech Lead, Full stack developer</h3>
               <time class="whitespace-nowrap">03/2018 - 06/2022 (4 years)</time>
             </div>
             <div class="flex items-baseline justify-between gap-3">
@@ -162,7 +180,9 @@
               <span class="text-right">Rome, Italy</span>
             </div>
             <p class="mt-2">
-              Global localization company coordinating 180,000+ translators across 185+ languages.
+              Translated is a leading global localization company coordinating 180,000+ translators
+              across 185+ languages and providing tech giants such as Amazon, Airbnb, Uber,
+              Skyscanner.
             </p>
             <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
               <li>
@@ -203,26 +223,227 @@
                 Led migration from a monolithic LAMP platform to a geo-distributed architecture of
                 60+ microservices deployed with Docker Swarm
               </li>
-              <li>Maintained contracted uptime for enterprise clients</li>
-              <li>Stack: TypeScript, Node.js, React, PHP, MySQL, Docker, Docker Swarm</li>
+              <li>Maintained the contracted 95% uptime SLA for enterprise clients</li>
+              <li>
+                Built developer tools for enterprise clients on OpenAPI standard, with online API
+                references and dedicated sandbox environments for integration and testing
+              </li>
+              <li>
+                Managed a Jira-based software development lifecycle with weekly sprints,
+                coordinating planning, execution, reviews, and releases across the engineering team
+              </li>
+              <li>
+                Stack: TypeScript, Node.js, React, PHP, MySQL, Redis, Docker, Docker Swarm, CI/CD
+                (GitHub Actions)
+              </li>
             </ul>
           </article>
-          <article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">Full-Stack Developer, DevOps</h3>
+              <time class="whitespace-nowrap">04/2017 - 02/2018 (11 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at Rocket Capital Inv.</h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
             <p class="mt-2">
-              Full career history at
-              <a
-                class="underline"
-                href="https://linkedin.com/in/damianobarbati"
-                target="_blank"
-                rel="noreferrer"
-                >https://linkedin.com/in/damianobarbati</a
-              >
+              Rocket Capital Inv. built AI-powered trading products that transformed
+              machine-learning forecasts into actionable, real-time market intelligence across
+              forex, crypto, equities, futures, and commodities.
+            </p>
+            <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
+              <li>
+                Integrated Python machine-learning models with the Node.js production platform to
+                surface predictive buy and sell signals across multiple financial markets
+              </li>
+              <li>
+                Built a real-time signal delivery pipeline using Server-Sent Events (SSE), enabling
+                the application to stream model-generated market intelligence to users as forecasts
+                updated
+              </li>
+              <li>
+                Stack: Node.js, React, PostgreSQL, SQLite, Redis, Docker, Docker Swarm, CI/CD
+                (TravisCI)
+              </li>
+            </ul>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">Full-Stack Developer, DevOps</h3>
+              <time class="whitespace-nowrap">10/2017 - 12/2017 (3 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at 59 Second Media</h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
+            <p class="mt-2">
+              59 Second Media built real-time audience engagement tools for live and social video,
+              connecting creators and communities through interactive moderation and streaming
+              workflows.
+            </p>
+            <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
+              <li>
+                Built a real-time social-video comment moderation platform with WebSockets and
+                Socket.io for live updates, filtering, moderation queues, winner selection, and
+                live-stream theming
+              </li>
+              <li>
+                Integrated the YouTube API to support live-video interactions and platform
+                workflows, managing authentication, token handling, and rate limits
+              </li>
+              <li>
+                Stack: Node.js, React, PostgreSQL, Redis, SQLite, Docker, Docker Swarm, CI/CD
+                (TravisCI)
+              </li>
+            </ul>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">CTO</h3>
+              <time class="whitespace-nowrap">02/2016 - 06/2017 (1 year 5 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at MVPBLD LLC</h4>
+              <span class="text-right">Boston, MA, USA</span>
+            </div>
+            <p class="mt-2">
+              MVPBLD partnered with startups from the Techstars Boston accelerator to turn
+              early-stage ideas into validated products and launch-ready businesses, with one
+              founder serving as a Techstars advisor.
+            </p>
+            <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
+              <li>
+                Served as a fractional CTO, guiding technical strategy and product decisions to
+                maximize rapid prototyping and go-to-market speed
+              </li>
+              <li>
+                Translated startup concepts into pragmatic MVP architectures, prioritizing
+                validation, delivery velocity, and a clear path to launch
+              </li>
+              <li>
+                Stack: Node.js, React, AngularJS, PostgreSQL, Docker, Docker Swarm, CI/CD (TravisCI)
+              </li>
+            </ul>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">Backend Developer</h3>
+              <time class="whitespace-nowrap">05/2016 - 10/2016 (6 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at LiveNeighborly</h4>
+              <span class="text-right">Mill Valley &amp; San Rafael, CA</span>
+            </div>
+            <p class="mt-2">
+              LiveNeighborly operated a local gardening service in Mill Valley, California,
+              combining customer booking with gardener coordination and route optimization.
+            </p>
+            <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
+              <li>
+                Built booking workflows and an SMS chatbot that let customers cancel or reschedule
+                gardening services while keeping operators and gardeners in sync
+              </li>
+              <li>
+                Developed gardener coordination and route-planning workflows using Google Maps
+                integrations to optimize daily service routes
+              </li>
+              <li>Stack: Node.js, AngularJS, PostgreSQL, Docker, Docker Swarm, CI/CD (TravisCI)</li>
+            </ul>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">Full-Stack Developer, DevOps</h3>
+              <time class="whitespace-nowrap">09/2015 - 01/2016 (5 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at Seta Beauty</h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
+            <p class="mt-2">
+              Seta Beauty is a leading Italian aesthetics company operating 100+ centers across
+              Italy.
+            </p>
+            <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
+              <li>
+                Designed the software architecture for a proprietary platform supporting customer
+                management, appointments, SMS communications, and franchise reporting
+              </li>
+              <li>
+                Built and maintained the company CMS, centralizing operational workflows across the
+                beauty-center network
+              </li>
+              <li>
+                Stack: Node.js, PostgreSQL, AngularJS, Redis, Docker, Docker Swarm, CI/CD (TravisCI)
+              </li>
+            </ul>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">PHP Developer</h3>
+              <time class="whitespace-nowrap">03/2015 - 06/2015 (4 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at Centounopercento Srl</h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
+            <p class="mt-1">
+              Customized a WordPress multisite solution for Cornetto across 14 countries, including
+              social integrations and PHP backend development.
+            </p>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">Full-Stack Developer, Co-Founder</h3>
+              <time class="whitespace-nowrap">10/2013 - 12/2014 (1 year 3 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at Cloud Mining Biz Srls</h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
+            <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
+              <li>
+                Built and maintained a cloud-mining and forex consultancy platform for Bitcoin and
+                Litecoin users
+              </li>
+              <li>
+                Integrated the GHash.io API and managed JavaScript, PHP, LAMP infrastructure, and
+                mining-rig deployment
+              </li>
+            </ul>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">Full-Stack Developer, DevOps</h3>
+              <time class="whitespace-nowrap">07/2012 - 06/2013 (1 year)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at Giridavi Srl</h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
+            <p class="mt-1">
+              Built and maintained WinTickets, an online contest platform with Facebook and
+              Mochimedia integrations, anti-cheating controls, and LAMP infrastructure.
+            </p>
+          </article>
+          <article data-position class="mb-4 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-semibold">Full-Stack Developer, DevOps</h3>
+              <time class="whitespace-nowrap">07/2011 - 02/2013 (1 year 8 months)</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">at Mistermatic</h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
+            <p class="mt-1">
+              Developed classified-ad publishing workflows, web crawlers, XML/JSON feeds, and
+              PHP/LAMP infrastructure for car-dealer websites.
             </p>
           </article>
         </section>
         <section class="mt-4">
           <h2 class="mb-2 border-b border-zinc-300 pb-1.5 leading-none font-medium">
-            PAST CHALLENGES
+            ACHIEVEMENTS
           </h2>
           <div class="space-y-1">
             <div class="grid grid-cols-[2.6rem_1fr] items-start">
@@ -259,7 +480,7 @@
       </section>
       <aside class="bg-resume px-6 pt-6 text-white">
         <div
-          class="mx-auto h-36 w-36 overflow-hidden rounded-full border-[9px] border-white/15 bg-white/15"
+          class="mx-auto size-36 overflow-hidden rounded-full border-[9px] border-white/15 bg-white/15"
         >
           <img
             src="me.jpg"
@@ -270,13 +491,17 @@
         <section class="mb-3">
           <h2 class="mb-2 border-b border-white/65 pb-2 leading-none font-medium">SUMMARY</h2>
           <p class="text-[1.1em]">
-            I'm a full-stack developer and tech lead with 10+ years of experience building B2B
-            platforms and production systems, including 5+ years leading engineering teams. I work
-            directly with clients to turn complex requirements into realistic plans and predictable
-            releases. I use AI coding agents in my day-to-day development workflow, mainly Codex. At
-            Applied Blockchain, I built applications for clients across the US, Europe and Asia. At
-            Translated, I built APIs and tools used by enterprise clients including Airbnb, Uber and
-            Skyscanner. I'm open to Tech Lead and Full-Stack Developer roles.
+            Tech Lead and Full-Stack Developer with 15+ years of experience building B2B platforms
+            and distributed systems, including 5+ years leading engineering teams.<br />
+            I work directly with clients to turn complex requirements into realistic plans and
+            predictable releases.<br />
+            My past solutions were built for clients across the US, Europe, and Asia, and adopted by
+            enterprises such as Airbnb, Uber, and Skyscanner. <br />
+            I'm open to Tech Lead and Full-Stack Developer roles. <br />
+            My current area of interest is AI development, as I want to focus on bridging
+            traditional software engineering with LLM integrations, RAG architectures, vector
+            databases, embeddings, semantic search, and agentic workflows to build next-generation
+            applications.
           </p>
         </section>
         <section class="mb-3">
@@ -296,11 +521,11 @@
             <li>Technical leadership &amp; engineering management</li>
             <li>Software architecture &amp; distributed systems</li>
             <li>B2B platform delivery</li>
-            <li>Client-facing requirements &amp; solution design</li>
-            <li>AI-enabled engineering</li>
-            <li>Full-stack development</li>
-            <li>Performance testing</li>
-            <li>Security testing</li>
+            <li>Client-facing requirements gathering &amp; solution design</li>
+            <li>AI-enabled engineering (mainly Codex)</li>
+            <li>E2E testing (Vitest, Playwright)</li>
+            <li>Performance testing (Artillery, K6)</li>
+            <li>Security testing (OWASP ZAP)</li>
           </ul>
         </section>
         <section>
