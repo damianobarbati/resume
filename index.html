@@ -103,6 +103,52 @@
           <h2 class="mb-4 border-b border-zinc-300 pb-1.5 leading-none font-medium">EXPERIENCE</h2>
           <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
             <div class="flex items-baseline justify-between gap-3 leading-tight">
+              <h3 class="font-bold">Founder &amp; Tech Lead</h3>
+              <time class="whitespace-nowrap">09/2026 - Present</time>
+            </div>
+            <div class="flex items-baseline justify-between gap-3">
+              <h4 class="mt-1 font-semibold">
+                at
+                <a
+                  class="underline"
+                  href="https://voltom.duckdns.org/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Voltom</a
+                >
+              </h4>
+              <span class="text-right">Rome, Italy</span>
+            </div>
+            <p class="mt-2">
+              Voltom is an AI-powered, fully automated identity verification platform that confirms
+              a live human and validates documents in under 10 seconds, no human review required.
+              Designed for developers, Voltom integrates real-time liveness detection and document
+              verification (passports, ID cards, and driving licences) directly into mobile
+              applications through a single automated flow.
+            </p>
+            <ul class="mt-1 list-outside list-disc space-y-px pl-4 marker:text-zinc-700">
+              <li>
+                Optimized mobile-first computer-vision models for ONNX Runtime through ad-hoc
+                quantization and runtime tuning, enabling real-time inference on mobile web and
+                low-end devices while minimizing latency and model bundle size
+              </li>
+              <li>
+                Deployed cross-platform, mobile-ready inference for iOS and Android, using NPU and
+                WebGPU acceleration where available while minimizing battery consumption
+              </li>
+              <li>
+                Engineered asynchronous processing pipelines with Redis Streams and BullMQ to manage
+                and distribute inference workloads across available hardware, optimized for EPYC
+                nodes with AVX2/AVX-512 instruction sets
+              </li>
+              <li>
+                Stack: ONNX Runtime, TypeScript, Node.js, Next.js, React, PostgreSQL, Redis Streams,
+                BullMQ, Docker, Kubernetes, CI/CD
+              </li>
+            </ul>
+          </article>
+          <article data-position class="mb-4 border-b border-zinc-300 pb-1.5">
+            <div class="flex items-baseline justify-between gap-3 leading-tight">
               <h3 class="font-bold">Tech Lead, Full stack developer</h3>
               <time class="whitespace-nowrap">01/2023 - 02/2026 (3 years)</time>
             </div>
@@ -165,8 +211,8 @@
                 planning, execution, reviews, and releases across engineering and client teams
               </li>
               <li>
-                Stack: TypeScript, Node.js, Next.js, React, PostgreSQL, Redis, Docker, Kubernetes, CI/CD
-                (Azure pipelines), Hardhat, Geth, Foundry
+                Stack: TypeScript, Node.js, Next.js, React, PostgreSQL, Redis, Docker, Kubernetes,
+                CI/CD (Azure pipelines), Hardhat, Geth, Foundry
               </li>
             </ul>
           </article>
@@ -498,9 +544,9 @@
             My past solutions were built for clients across the US, Europe, and Asia, and adopted by
             enterprises such as Airbnb, Uber, and Skyscanner. <br />
             I'm open to Tech Lead and Full-Stack Developer roles. <br />
-            My current area of interest is AI development, with focus on bridging
-            traditional software engineering with LLM integrations, RAG architectures, vector
-            databases, embeddings, semantic search, and agentic workflows to build next-generation
+            My current area of interest is AI development, with focus on bridging traditional
+            software engineering with LLM integrations, RAG architectures, vector databases,
+            embeddings, semantic search, and agentic workflows to build next-generation
             applications.
           </p>
         </section>
@@ -510,7 +556,8 @@
             <li>TypeScript · JavaScript</li>
             <li>Node.js · PostgreSQL · ClickHouse</li>
             <li>React · Next.js · TailwindCSS · TanStack</li>
-            <li>Redis · Docker · Kubernetes</li>
+            <li>Redis · BullMQ · Docker · Kubernetes</li>
+            <li>ONNX Runtime</li>
             <li>AWS · Azure · REST APIs</li>
             <li>Git · GitHub Actions · CI/CD</li>
             <li>Vitest · Playwright</li>
@@ -521,7 +568,7 @@
           <h2 class="mb-2 border-b border-white/65 pb-2 leading-none font-medium">SKILLS</h2>
           <ul class="space-y-0 text-[1.1em]">
             <li>Technical leadership &amp; engineering management</li>
-            <li>Distributed systems</li>
+            <li>Mobile-first AI</li>
             <li>Client-facing requirements gathering &amp; solution design</li>
             <li>AI-enabled engineering (Codex / Claude)</li>
             <li>E2E testing (Vitest, Playwright)</li>
